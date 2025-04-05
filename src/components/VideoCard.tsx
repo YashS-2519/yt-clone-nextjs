@@ -3,7 +3,7 @@ export function VideoCard(props: any) {
     <div className="pb-2">
 
       <img
-        className="rounded-xl p-2"
+        className="rounded-xl p-2 cursor-pointer"
         src={props.thumbnail}
         alt=""
       />
@@ -12,7 +12,7 @@ export function VideoCard(props: any) {
 
         <div className="col-span-2">
           <img
-            className="rounded-full w-10 h-10"
+            className="rounded-full w-10 h-10 cursor-pointer"
             src={props.authorImage}
             alt=""
           />
@@ -20,9 +20,9 @@ export function VideoCard(props: any) {
 
         <div className="col-span-10 pl-2">
 
-          <div>{props.title}</div>
-          <div className="col-span-11 text-gray-400 text-base">{props.author}</div>
-          <div className="col-span-11 text-gray-400 text-base">{props.views} views | {props.timestamp}</div>
+          <div className="cursor-pointer">{props.title}</div>
+          <div className="col-span-11 text-gray-400 text-base cursor-pointer">{props.author}</div>
+          <div className="col-span-11 text-gray-400 text-base cursor-pointer">{props.views} views | {props.timestamp}</div>
 
         </div>
 

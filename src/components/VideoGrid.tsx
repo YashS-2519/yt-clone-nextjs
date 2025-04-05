@@ -102,8 +102,9 @@ const VIDEOS = [
 export const VideoGrid = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2">
-      {VIDEOS.map((video) => (
+      {VIDEOS.map((video, index) => (
         <VideoCard
+          key={index}
           thumbnail={video.thumbnail}
           authorImage={video.authorImage}
           title={video.title}
